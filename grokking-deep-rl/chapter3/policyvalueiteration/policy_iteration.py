@@ -10,8 +10,9 @@ def value_iteration(P, gamma=0.99, theta=1e10):
     pass
 
 def main():
-    env = gym.make('FrozenLake-v0')
+    env = gym.make('FrozenLake-v1')
     P = env.unwrapped.P
+    print(P)
 
 if __name__=='__main__':
     main()
